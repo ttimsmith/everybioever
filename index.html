@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Every Bio Ever</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,900">
+	<link rel="stylesheet" href="style.css">
+	<script src="prefixfree.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pickBio = function() {
+				$('blockquote').text(bios[Math.floor(Math.random() * bios.length)]);
+			}
+
+			var centerContainer = function() {
+				$('#container').css('margin-top', ($(window).height() - $('#container').height()) / 2);
+			};
+
+			pickBio();
+
+			centerContainer();
+
+			$(window).resize(function() {
+				centerContainer();
+			});
+
+			$('#reload').click(function() {
+				pickBio();
+			});
+
+		});
+
+		var bios = Array(
+			'Nerd.',
+			'Husband, father, designer and writer. Craft beer enthusiast.',
+			'I FOllow Back!!!!',
+			'Justin <3<3<3',
+			'Opinionated.',
+			'Author and inspirational speaker.',
+			'#!I@( !@r!3 *&#',
+			'192.168.1.101 is where the heart is.',
+			'PBA. Skinny jeans. Starbucks. Cycling.'
+		);
+	</script>
+</head>
+<body>
+	<div id="container">
+		<h1>Every Bio Ever</h1>
+		<blockquote></blockquote>
+		<a href="#" id="reload">Reload</a>
+	</div>
+	<div id="creds">A thing by <a href="http://galengidman.com/">Galen Gidman</a> and <a href="http://github.com/galengidman/everybioever">friends</a>.</div>
+	<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Feverybioever.com%2F&amp;send=false&amp;layout=button_count&amp;width=120&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowTransparency="true"></iframe>
+	<div class="g-plusone" data-size="medium"></div>
+	<script>(function(){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src="https://apis.google.com/js/plusone.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+</body>
+</html>
