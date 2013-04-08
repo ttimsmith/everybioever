@@ -84,3 +84,13 @@ iframe:nth-of-type(2) {
 	bottom: 12px;
 	left: 216px;
 }
+
+@media (max-width: 768px) {
+	iframe,
+	#___plusone_0 { display: none; }
+
+	#creds {
+		position: static;
+		margin-top: 60px;
+	}
+}

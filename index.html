@@ -15,7 +15,11 @@
 			}
 
 			var centerContainer = function() {
-				$('#container').css('margin-top', ($(window).height() - $('#container').height()) / 2);
+				if ($(window).width() >= 768) {
+					$('#container').css('margin-top', ($(window).height() - $('#container').height()) / 2);
+				} else {
+					$('#container').css('margin-top', '60px');
+				}
 			};
 
 			pickBio();
@@ -60,7 +64,9 @@
 			'SEO nut. #wordpress #marketing #seo #keywords #networking #google #conversionrate',
 			'Easily distract...',
 			'mnmlst',
-			'GIF sommelier'
+			'GIF sommelier',
+			'Programmer of Things',
+			'Geek.'
 		);
 	</script>
 </head>
@@ -70,7 +76,7 @@
 		<blockquote></blockquote>
 		<a href="#" id="reload">Reload</a>
 	</div>
-	<div id="creds">A thing by <a href="http://galengidman.com/">Galen Gidman</a> and <a href="http://github.com/galengidman/everybioever/contributors">friends</a>.</div>
+	<div id="creds">A thing by <a href="http://galengidman.com/">Galen Gidman</a> and <a href="http://github.com/galengidman/everybioever/contributors">friends</a>. <a href="http://github.com/galengidman/everybioever">Contribute</a>.</div>
 	<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Feverybioever.com%2F&amp;send=false&amp;layout=button_count&amp;width=120&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowTransparency="true"></iframe>
