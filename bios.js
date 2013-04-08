@@ -3,5 +3,6 @@ var bios = new Array(
 	'Husband, father, designer and writer. Craft beer enthusiast.',
 	'I FOllow Back!!!!',
 	'Justin <3<3<3',
-	'Opinionated'
+	'Opinionated',
+	'Retweets are not endorsements.'
 );
