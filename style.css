@@ -48,7 +48,6 @@ blockquote {
 	text-transform: uppercase;
 	font-weight: 900;
 	font-size: 12px;
-	transition: all .1s ease;
 }
 
 #reload:hover { background: rgba(0, 0, 0, .25); }
